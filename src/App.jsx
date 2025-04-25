@@ -33,7 +33,7 @@ function App() {
 
         <Route element={<PrivateRoute />}>
          <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/verify-otp" element={<VerifyOTP />} />
+ 
       <Route path="/driver-dashboard" element = {<DriverDashboard />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/" element={<HomePage />} />
