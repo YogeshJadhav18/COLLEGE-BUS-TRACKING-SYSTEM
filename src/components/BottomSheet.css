@@ -1,0 +1,36 @@
+.bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 35vh;
+    background: #1e1e1e;
+    color: white;
+    overflow-y: auto;
+    padding: 10px 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .bottom-sheet ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .bottom-sheet li {
+    padding: 6px 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .bottom-sheet li.crossed {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .eta-info {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
