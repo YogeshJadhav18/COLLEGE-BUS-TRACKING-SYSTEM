@@ -14,7 +14,6 @@ import DriverProfilePage from "./pages/DriverProfilePage";
 import AdminDashboard from "./dashboard/AdminDashboard";
 import DriverDashboard from "./dashboard/DriverDashboard";
 import ForgotPassword from "./pages/ForgotPassword";
-import VerifyOTP from "./pages/VerifyOtp";
 import "leaflet/dist/leaflet.css";
 import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 
