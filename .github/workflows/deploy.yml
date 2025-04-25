@@ -2,8 +2,7 @@ name: Run Telegram Bus Bot
 
 on:
   push:
-    branches: [main]
-
+    branches: [master]
 jobs:
   run:
     runs-on: ubuntu-latest
