@@ -17,9 +17,18 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
+
+// new update
+const bot101 = new Telegraf(process.env.BOT_TOKEN_101);
+const bot102 = new Telegraf(process.env.BOT_TOKEN_102);
+
+
+
 // ✅ Telegram Bot Tokens
-const bot101 = new Telegraf("7575195079:AAGqQ0Bh_T1n8CLiDwt7xbCRaDN--pTFWJA");
-const bot102 = new Telegraf("7910437475:AAHFxBWru92beLN5Lx9XZAGpk9IghkLHHrc");
+// const bot101 = new Telegraf("7575195079:AAGqQ0Bh_T1n8CLiDwt7xbCRaDN--pTFWJA");
+// const bot102 = new Telegraf("7910437475:AAHFxBWru92beLN5Lx9XZAGpk9IghkLHHrc");
+
+
 
 // 📌 Handle Regular Live Location
 const handleLocationUpdate = (ctx, busNumber) => {
