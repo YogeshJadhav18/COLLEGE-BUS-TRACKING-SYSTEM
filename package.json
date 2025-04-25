@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "start": "node busLocationBot.js",
+    "start": "node src/telegramBots/busLocationBot.js's actual location. Update the `start` script to reference",
   "dev": "vite",
   "build": "vite build",
   "lint": "eslint .",
