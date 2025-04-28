@@ -1,7 +1,7 @@
 export  const bus101Stops = [
   { lat:23.30171407232595, lng:  77.36203134362793, name: "RGPV" },
   { lat: 23.273172287208947, lng: 77.36997095849698, name: "LALGHATI SQAURE" },
-  { lat: 23.255608322309183, lng: 77.39859373642582, name: "KAMLA PARK ROAD" },
+  { lat: 23.234247367650024 , lng: 77.4015283292454, name: "New market" },
   { lat: 23.234247367650024 , lng: 77.4015283292454, name: "New market" },
   { lat: 23.22467133927969,  lng: 77.40208911319817, name: "TULSI NAGAR" },
   { lat: 23.217883940082572, lng: 77.4056126070792, name: "MANIT GATE" },
