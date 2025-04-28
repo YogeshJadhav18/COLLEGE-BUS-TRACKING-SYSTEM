@@ -60,6 +60,7 @@ const MapComponent = () => {
 
   const bus102Stops = [
     { lat: 23.217883940082572, lng: 77.4056126070792, name: "MANIT GATE" },
+    { lat: 23.22117260222136,   lng:77.40370792701171 ,name: "MANIT square" },
     { lat: 23.22467133927969,  lng: 77.40208911319817, name: "TULSI NAGAR" },
     { lat:23.226978628481756,  lng:77.40914853627423,   name: "2nd stop"},
     { lat: 23.23135107787127, lng: 77.41897393824748, name: "SHIVAJI NAGAR" },

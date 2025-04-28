@@ -15,8 +15,7 @@ const ProfilePage = () => {
   }, [user, navigate]);
 
   const storedPhoto = localStorage.getItem("profileImage");
-  const storedName =
-    localStorage.getItem("profileName") || user?.displayName || "User";
+  const storedName = localStorage.getItem("profileName") || user?.displayName || "User";
   const storedRole = localStorage.getItem("userType") || "student";
 
   const [name, setName] = useState(storedName);
@@ -50,7 +49,6 @@ const ProfilePage = () => {
   };
 
   const handleUpdateProfile = () => {
-    localStorage.setItem("role")
     localStorage.setItem("profileName", name);
     alert("Profile updated successfully!");
     setIsEditing(false);
@@ -147,29 +145,55 @@ const ProfilePage = () => {
           </div>
         )}
 
-        {/* Buttons */}
+        {/* Buttons and Edit Profile Section */}
         <div className="mt-4 flex flex-col gap-3">
           {!isChangingPassword && (
             <>
-              <button
-                onClick={() => setIsEditing(true)}
-                className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
-              >
-                Edit Profile
-              </button>
-              <button
-                onClick={() => setIsChangingPassword(true)}
-                className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
-              >
-                Change Password
-              </button>
-              {storedRole === "admin" && (
-                <button
-                  onClick={() => navigate("/admin-dashboard")}
-                  className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
-                >
-                  Go to Admin Dashboard
-                </button>
+              {isEditing ? (
+                <div className="flex flex-col gap-2">
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full p-2 bg-gray-600 border border-gray-500 rounded text-white"
+                    placeholder="Enter your name"
+                  />
+                  <button
+                    onClick={handleUpdateProfile}
+                    className="w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-400 transition-all"
+                  >
+                    Save Changes
+                  </button>
+                  <button
+                    onClick={() => setIsEditing(false)}
+                    className="w-full px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-400 transition-all"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <button
+                    onClick={() => setIsEditing(true)}
+                    className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
+                  >
+                    Edit Profile
+                  </button>
+                  <button
+                    onClick={() => setIsChangingPassword(true)}
+                    className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
+                  >
+                    Change Password
+                  </button>
+                  {storedRole === "admin" && (
+                    <button
+                      onClick={() => navigate("/admin-dashboard")}
+                      className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
+                    >
+                      Go to Admin Dashboard
+                    </button>
+                  )}
+                </>
               )}
             </>
           )}
