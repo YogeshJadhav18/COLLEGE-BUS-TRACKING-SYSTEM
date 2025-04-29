@@ -25,11 +25,11 @@ const database = getDatabase(app);
 
 
 // ✅ Telegram Bot Tokens
-const bot101 = new Telegraf("7575195079:AAGqQ0Bh_T1n8CLiDwt7xbCRaDN--pTFWJA");
+const bot101 = new Telegraf("8119738992:AAGSETcrar_-Zrjlgewng006RkdN4nGpmE8");
 const bot102 = new Telegraf("7910437475:AAHFxBWru92beLN5Lx9XZAGpk9IghkLHHrc");
+// 8119738992:AAGSETcrar_-Zrjlgewng006RkdN4nGpmE8
 
-
-
+// const bot101 = new Telegraf("7575195079:AAGqQ0Bh_T1n8CLiDwt7xbCRaDN--pTFWJA");
 // 📌 Handle Regular Live Location
 const handleLocationUpdate = (ctx, busNumber) => {
   if (!ctx.message || !ctx.message.location) {
